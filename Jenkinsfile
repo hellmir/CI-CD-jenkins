@@ -1,12 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        DB_ROOT_PASSWORD = credentials('DB_ROOT_PASSWORD')
-        DB_USER_NAME = credentials('DB_USER_NAME')
-        DB_USER_PASSWORD = credentials('DB_USER_PASSWORD')
-    }
-
     stages {
 
         stage('Environment Setup') {
